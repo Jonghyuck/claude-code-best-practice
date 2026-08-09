@@ -137,10 +137,10 @@ claude
 ### Others
 - [RPI](development-workflows/rpi/rpi-workflow.md) [![Implemented](!/tags/implemented.svg)](development-workflows/rpi/rpi-workflow.md)
 - [Ralph Wiggum Loop](https://www.youtube.com/watch?v=eAtvoGlpeRU) [![Implemented](!/tags/implemented.svg)](https://github.com/shanraisshan/ralph-wiggum-self-evolving-loop)
-- [Andrej Karpathy (Founding Member, OpenAI) Workflow](https://x.com/karpathy/status/2015883857489522876)
-- [Peter Steinberger (Creator of OpenClaw) Workflow](https://youtu.be/8lF7HmQ_RgY?t=2582)
-- Boris Cherny (Creator of Claude Code) Workflow — [13 Tips](tips/claude-boris-13-tips-03-jan-26.md) · [10 Tips](tips/claude-boris-10-tips-01-feb-26.md) · [12 Tips](tips/claude-boris-12-tips-12-feb-26.md) · [2 Tips](tips/claude-boris-2-tips-25-mar-26.md) · [15 Tips](tips/claude-boris-15-tips-30-mar-26.md) · [6 Tips](tips/claude-boris-6-tips-16-apr-26.md) [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny)
-- Thariq (Anthropic) Workflow — [Skills](tips/claude-thariq-tips-17-mar-26.md) · [Session Management](tips/claude-thariq-tips-16-apr-26.md) [![Thariq](!/tags/thariq.svg)](https://x.com/trq212)
+- [Andrej Karpathy (OpenAI 창립 멤버) 워크플로우](https://x.com/karpathy/status/2015883857489522876)
+- [Peter Steinberger (OpenClaw 제작자) 워크플로우](https://youtu.be/8lF7HmQ_RgY?t=2582)
+- Boris Cherny (Claude Code 제작자) 워크플로우 — [13 Tips](tips/claude-boris-13-tips-03-jan-26.md) · [10 Tips](tips/claude-boris-10-tips-01-feb-26.md) · [12 Tips](tips/claude-boris-12-tips-12-feb-26.md) · [2 Tips](tips/claude-boris-2-tips-25-mar-26.md) · [15 Tips](tips/claude-boris-15-tips-30-mar-26.md) · [6 Tips](tips/claude-boris-6-tips-16-apr-26.md) [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny)
+- Thariq (Anthropic) 워크플로우 — [Skills](tips/claude-thariq-tips-17-mar-26.md) · [Session Management](tips/claude-thariq-tips-16-apr-26.md) [![Thariq](!/tags/thariq.svg)](https://x.com/trq212)
 
 <p align="center">
   <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
@@ -156,12 +156,12 @@ Claude Code를 다른 모델 — Codex, Gemini, GPT, Kimi, DeepSeek, 로컬 — 
 
 방법론: [Cross-Model (Claude Code + Codex) Workflow](development-workflows/cross-model-workflow/cross-model-workflow.md) [![Implemented](!/tags/implemented.svg)](development-workflows/cross-model-workflow/cross-model-workflow.md) — Claude에서 Plan, Codex에서 QA-Review를 수행하는 수동 2-터미널 흐름.
 
-| Name | ★ | Type | Bridges to | What it does |
+| 이름 | ★ | 유형 | 연결 대상 | 하는 일 |
 |------|---|------|------------|--------------|
-| [musistudio/claude-code-router](https://github.com/musistudio/claude-code-router) | 34k | Router | OpenRouter, DeepSeek, Ollama, Gemini, Kimi, Qwen, Groq, +more | Routes Claude Code's API to any compatible provider, with per-task model selection |
-| [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) | 32k | Router | Gemini CLI, Codex, Claude Code, Antigravity | Wraps each CLI as an OpenAI/Gemini/Claude/Codex-compatible API service |
-| [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) | 18k | Plugin | Codex / GPT-5 | Official OpenAI plugin: `/codex:review`, `/codex:adversarial-review`, `/codex:rescue` inside Claude Code |
-| [BeehiveInnovations/pal-mcp-server](https://github.com/BeehiveInnovations/pal-mcp-server) | 12k | MCP | Gemini, OpenAI, Azure, Grok, Ollama, OpenRouter (50+ models) | Multi-model MCP server (formerly `zen-mcp-server`) — call other models as Claude tools |
+| [musistudio/claude-code-router](https://github.com/musistudio/claude-code-router) | 34k | Router | OpenRouter, DeepSeek, Ollama, Gemini, Kimi, Qwen, Groq, +more | Claude Code의 API를 호환되는 모든 제공자로 라우팅, 작업별 모델 선택 지원 |
+| [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) | 32k | Router | Gemini CLI, Codex, Claude Code, Antigravity | 각 CLI를 OpenAI/Gemini/Claude/Codex 호환 API 서비스로 래핑 |
+| [openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc) | 18k | Plugin | Codex / GPT-5 | 공식 OpenAI 플러그인: Claude Code 안에서 `/codex:review`, `/codex:adversarial-review`, `/codex:rescue` |
+| [BeehiveInnovations/pal-mcp-server](https://github.com/BeehiveInnovations/pal-mcp-server) | 12k | MCP | Gemini, OpenAI, Azure, Grok, Ollama, OpenRouter (50+ models) | 멀티모델 MCP 서버 (이전 `zen-mcp-server`) — 다른 모델을 Claude 도구로 호출 |
 
 <p align="center">
   <img src="!/claude-jumping.svg" alt="section divider" width="60" height="50">
@@ -178,10 +178,10 @@ Claude Code를 다른 모델 — Codex, Gemini, GPT, Kimi, DeepSeek, 로컬 — 
 | [Egonex-AI/Understand-Anything](https://github.com/Egonex-AI/Understand-Anything) | 67k | 8 |
 | [wshobson/agents](https://github.com/wshobson/agents) | 38k | 149 |
 | [scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 30k | 148 |
-| [awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | 28k | 1,497+ (curated list) |
-| [impeccable](https://github.com/pbakaus/impeccable) | 27k | 1 (with 7 design domain references) |
+| [awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) | 28k | 1,497+ (큐레이션 목록) |
+| [impeccable](https://github.com/pbakaus/impeccable) | 27k | 1 (디자인 도메인 레퍼런스 7개 포함) |
 | [agent-skills](https://github.com/addyosmani/agent-skills) | 27k | 21 |
-| [claude-skills](https://github.com/alirezarezvani/claude-skills) | 15k | 246 (across 9 domains) |
+| [claude-skills](https://github.com/alirezarezvani/claude-skills) | 15k | 246 (9개 도메인) |
 | [shanraisshan/draw-json-architecture-skill](https://github.com/shanraisshan/draw-json-architecture-skill) | 3 | 1 |
 
 <p align="center">
@@ -213,158 +213,158 @@ Claude Code를 다른 모델 — Codex, Gemini, GPT, Kimi, DeepSeek, 로컬 — 
 
 | 팁 | 출처 |
 |-----|--------|
-| challenge Claude — "grill me on these changes and don't make a PR until I pass your test." or "prove to me this works" and have Claude diff between main and your branch 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742752566632544) |
-| after a mediocre fix — "knowing everything you know now, scrap this and implement the elegant solution" 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742752566632544) |
-| Claude fixes most bugs by itself — paste the bug, say "fix", don't micromanage how 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742750473720121) |
+| Claude에게 도전시키기 — "이 변경사항으로 나를 시험해봐, 통과 전엔 PR 만들지 마" 또는 "이게 동작한다는 걸 증명해봐"라고 하고 main과 브랜치를 diff시키기 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742752566632544) |
+| 어설픈 수정 후 — "지금 알게 된 모든 걸 바탕으로, 이걸 버리고 우아한 해결책을 구현해봐" 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742752566632544) |
+| Claude는 대부분 버그를 스스로 고침 — 버그를 붙여넣고 "고쳐"라고만, 방법을 세세히 관리하지 말 것 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742750473720121) |
 
 <a id="tips-planning"></a>■ **계획/스펙 (7)**
 
 | 팁 | 출처 |
 |-----|--------|
-| always start with [plan mode](https://code.claude.com/docs/en/common-workflows) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179845336527000) |
-| start with a minimal spec or prompt and ask Claude to interview you using [AskUserQuestion](https://code.claude.com/docs/en/cli-reference) tool, then make a new session to execute the spec | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2005315275026260309) |
-| always make a phase-wise gated plan, with each phase having multiple tests (unit, automation, integration) | [![Dex](!/tags/community-dex.svg)](videos/claude-dex-mlops-community-24-mar-26.md) [![Video](!/tags/video.svg)](https://youtu.be/YwZR6tc7qYg?t=1032) |
-| break PRDs into vertical slices (tracer bullets) that cross all layers (DB + service + UI) — AI defaults to horizontal phasing (DB phase, then API phase, then frontend phase) which delays end-to-end feedback until the last phase. From the Pragmatic Programmer 🚫👶 | [![Matt](!/tags/community-matt.svg)](videos/claude-matt-pocock-24-apr-26.md) [![Video](!/tags/video.svg)](https://youtu.be/-QFHIoCo-Ko) |
-| spin up a second Claude to review your plan as a staff engineer, or use [cross-model](development-workflows/cross-model-workflow/cross-model-workflow.md) for review | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742745365057733) |
-| write detailed specs and reduce ambiguity before handing work off — the more specific you are, the better the output | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742752566632544) |
-| prototype > PRD — build 20-30 versions instead of writing specs, the cost of building is low so take many shots | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=3630) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=3630) |
+| 항상 [plan mode](https://code.claude.com/docs/en/common-workflows)로 시작 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179845336527000) |
+| 최소 스펙이나 프롬프트로 시작해 Claude가 [AskUserQuestion](https://code.claude.com/docs/en/cli-reference) 도구로 당신을 인터뷰하게 한 뒤, 새 세션에서 스펙을 실행 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2005315275026260309) |
+| 항상 단계별 게이트 계획을 세우고, 각 단계마다 여러 테스트(단위·자동화·통합)를 둘 것 | [![Dex](!/tags/community-dex.svg)](videos/claude-dex-mlops-community-24-mar-26.md) [![Video](!/tags/video.svg)](https://youtu.be/YwZR6tc7qYg?t=1032) |
+| PRD를 모든 계층(DB + 서비스 + UI)을 관통하는 수직 슬라이스(tracer bullets)로 쪼개기 — AI는 기본적으로 수평 단계(DB 단계 → API 단계 → 프론트엔드 단계)로 나눠 end-to-end 피드백을 마지막 단계까지 지연시킴. 《실용주의 프로그래머》에서 🚫👶 | [![Matt](!/tags/community-matt.svg)](videos/claude-matt-pocock-24-apr-26.md) [![Video](!/tags/video.svg)](https://youtu.be/-QFHIoCo-Ko) |
+| 두 번째 Claude를 띄워 staff engineer처럼 계획을 리뷰하게 하거나, 리뷰에 [cross-model](development-workflows/cross-model-workflow/cross-model-workflow.md)을 활용 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742745365057733) |
+| 작업을 넘기기 전에 상세한 스펙을 쓰고 모호함을 줄일 것 — 구체적일수록 결과가 좋아짐 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742752566632544) |
+| 프로토타입 > PRD — 스펙을 쓰는 대신 20~30개 버전을 만들기, 만드는 비용이 낮으니 많이 시도할 것 | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=3630) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=3630) |
 
 <a id="tips-context"></a>■ **컨텍스트 (5)**
 
 | 팁 | 출처 |
 |-----|--------|
-| context rot kicks in around ~300-400k tokens on the 1M context model — don't let sessions drift past that for intelligence-sensitive work | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
-| dumb zone kicks in around ~40% context — "you hit this point where you have degrading results". Newcomers: "shoot to keep it under 40%, and if you get up to 60%, think about wrapping it up". Experienced: "aggressively keep it below 30%" — push to 60% only on simple tasks. Manual [/compact](https://code.claude.com/docs/en/interactive-mode) or [/clear](https://code.claude.com/docs/en/cli-reference) to reset when switching tasks | [![Dex](!/tags/community-dex.svg)](videos/claude-dex-mlops-community-24-mar-26.md) [![Video](!/tags/video.svg)](https://youtu.be/YwZR6tc7qYg?t=1541) |
-| rewind > correct — double-Esc or [/rewind](https://code.claude.com/docs/en/checkpointing) back to before the failed attempt and re-prompt with what you learned, instead of leaving failed attempts + corrections polluting context 🚫👶 | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
-| [/compact](https://code.claude.com/docs/en/interactive-mode) with a hint (/compact focus on the auth refactor, drop the test debugging) beats letting autocompact fire — the model is at its least intelligent point when auto-compacting due to context rot | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
-| use subagents for context management — ask yourself "will I need this tool output again, or just the conclusion?" — 20 file reads + 12 greps + 3 dead ends stay in the child's context, only the final report returns 🚫👶 | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
+| 컨텍스트 부패(rot)는 1M 컨텍스트 모델에서 ~300-400k 토큰부터 시작 — 지능이 중요한 작업은 세션이 그 이상 흘러가지 않게 할 것 | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
+| "dumb zone"(성능 저하 구간)은 컨텍스트 ~40%부터 시작 — "결과가 나빠지는 지점에 도달한다". 초보자: "40% 미만으로 유지하고, 60%에 이르면 마무리를 고민하라". 숙련자: "공격적으로 30% 미만 유지" — 간단한 작업만 60%까지. 작업 전환 시 [/compact](https://code.claude.com/docs/en/interactive-mode) 또는 [/clear](https://code.claude.com/docs/en/cli-reference)로 리셋 | [![Dex](!/tags/community-dex.svg)](videos/claude-dex-mlops-community-24-mar-26.md) [![Video](!/tags/video.svg)](https://youtu.be/YwZR6tc7qYg?t=1541) |
+| 되감기 > 수정 — 실패한 시도+수정으로 컨텍스트를 오염시키는 대신, double-Esc나 [/rewind](https://code.claude.com/docs/en/checkpointing)로 실패 시점 이전으로 돌아가 배운 것을 담아 재프롬프트 🚫👶 | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
+| [/compact](https://code.claude.com/docs/en/interactive-mode)에 힌트를 주는 것(/compact focus on the auth refactor, drop the test debugging)이 autocompact가 발동되게 두는 것보다 나음 — 컨텍스트 부패로 auto-compact될 때 모델은 가장 지능이 낮은 상태 | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
+| 컨텍스트 관리에 서브에이전트를 활용 — "이 도구 출력을 다시 볼까, 아니면 결론만 필요할까?"를 자문할 것 — 20번의 파일 읽기 + 12번의 grep + 3번의 막다른 길은 자식 컨텍스트에 남고, 최종 리포트만 반환됨 🚫👶 | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
 
 <a id="tips-session"></a>■ **세션 관리 (6)**
 
 | 팁 | 출처 |
 |-----|--------|
-| every turn is a branching point — after Claude ends a turn, pick between Continue, /rewind, /clear, /compact, or Subagent based on how much existing context you need to carry forward | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
-| new task = new session — related tasks (e.g. writing docs for what you just built) can reuse context for efficiency, but genuinely new tasks deserve a fresh session | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
-| use "summarize from here" before rewinding to have Claude write a handoff message — like a note to the previous iteration of Claude from its future self | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
-| /compact vs /clear — compact is lossy but momentum-friendly (mid-task, fuzzy details ok); /clear + brief is more work but you control exactly what carries forward (high-stakes next step) | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
-| use recaps for long-running sessions — short summaries of what Claude did and what's next, useful when returning after minutes or hours. Disable with recaps in /config | [![Boris](!/tags/boris-cherny.svg)](tips/claude-boris-6-tips-16-apr-26.md) |
-| [/rename](https://code.claude.com/docs/en/cli-reference) important sessions (e.g. [TODO - refactor task]) and [/resume](https://code.claude.com/docs/en/cli-reference) them later — label each instance when running multiple Claudes simultaneously | [![Cat](!/tags/cat-wu.svg)](https://every.to/podcast/how-to-use-claude-code-like-the-people-who-built-it) |
+| 매 턴이 분기점 — Claude가 턴을 끝내면, 기존 컨텍스트를 얼마나 이어가야 하는지에 따라 Continue, /rewind, /clear, /compact, Subagent 중에서 선택 | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
+| 새 작업 = 새 세션 — 관련 작업(예: 방금 만든 것의 문서 작성)은 효율을 위해 컨텍스트를 재사용할 수 있지만, 진짜 새로운 작업은 새 세션이 마땅함 | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
+| 되감기 전에 "summarize from here"로 Claude가 인수인계 메시지를 쓰게 하기 — 미래의 Claude가 과거의 Claude에게 남기는 메모처럼 | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
+| /compact vs /clear — compact는 손실이 있지만 흐름 유지에 좋음(작업 중, 세부가 흐릿해도 OK); /clear + 요약은 더 수고롭지만 무엇을 넘길지 정밀 제어(고위험 다음 단계) | [![Thariq](!/tags/thariq.svg)](tips/claude-thariq-tips-16-apr-26.md) |
+| 장시간 세션엔 recaps 활용 — Claude가 한 일과 다음 할 일의 짧은 요약, 몇 분/몇 시간 뒤 돌아올 때 유용. /config의 recaps로 비활성화 | [![Boris](!/tags/boris-cherny.svg)](tips/claude-boris-6-tips-16-apr-26.md) |
+| 중요한 세션은 [/rename](https://code.claude.com/docs/en/cli-reference)하고(예: [TODO - 리팩터 작업]) 나중에 [/resume](https://code.claude.com/docs/en/cli-reference) — 여러 Claude를 동시에 돌릴 때 각 인스턴스에 라벨링 | [![Cat](!/tags/cat-wu.svg)](https://every.to/podcast/how-to-use-claude-code-like-the-people-who-built-it) |
 
 <a id="tips-claudemd"></a>■ **CLAUDE.md + .claude/rules (8)**  <!-- 카테고리명은 파일명이므로 원형 유지 -->
 
 | 팁 | 출처 |
 |-----|--------|
-| [CLAUDE.md](https://code.claude.com/docs/en/memory) should target under [200 lines](https://code.claude.com/docs/en/memory#write-effective-instructions) per file. [60 lines in humanlayer](https://www.humanlayer.dev/blog/writing-a-good-claude-md) ([still not 100% guaranteed](https://www.reddit.com/r/ClaudeCode/comments/1qn9pb9/claudemd_says_must_use_agent_claude_ignores_it_80/)) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179840848597422) [![Dex](!/tags/community-dex.svg)](https://www.humanlayer.dev/blog/writing-a-good-claude-md) |
-| .claude/rules/*.md auto-load into every session like CLAUDE.md — add paths: YAML frontmatter to lazy-load them only when Claude touches files matching the glob | [![Claude](!/tags/claude.svg)](https://code.claude.com/docs/en/memory#organize-rules-with-clauderules) |
-| wrap domain-specific CLAUDE.md rules in [\<important if="..."\> tags](https://www.hlyr.dev/blog/stop-claude-from-ignoring-your-claude-md) to stop Claude from ignoring them as files grow longer | [![Dex](!/tags/community-dex.svg)](https://www.hlyr.dev/blog/stop-claude-from-ignoring-your-claude-md) |
-| use [multiple CLAUDE.md](best-practice/claude-memory.md) for monorepos — ancestor + descendant loading | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2016339448863355206) |
-| use [.claude/rules/](https://code.claude.com/docs/en/memory#organize-rules-with-clauderules) to split large instructions | [![Claude](!/tags/claude.svg)](https://code.claude.com/docs/en/memory#organize-rules-with-clauderules) |
-| any developer should be able to launch Claude, say "run the tests" and it works on the first try — if it doesn't, your CLAUDE.md is missing essential setup/build/test commands | [![Dex](!/tags/community-dex.svg)](https://x.com/dexhorthy/status/2034713765401551053) |
-| keep codebases clean and finish migrations — partially migrated frameworks confuse models that might pick the wrong pattern | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=1112) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=1112) |
-| use [settings.json](best-practice/claude-settings.md) for harness-enforced behavior (attribution, permissions, model) — don't put "NEVER add Co-Authored-By" in CLAUDE.md when attribution.commit: "" is deterministic | [![davila7](!/tags/community-davila7.svg)](https://x.com/dani_avila7/status/2036182734310195550) |
+| [CLAUDE.md](https://code.claude.com/docs/en/memory)는 파일당 [200줄](https://code.claude.com/docs/en/memory#write-effective-instructions) 미만을 목표로. [humanlayer는 60줄](https://www.humanlayer.dev/blog/writing-a-good-claude-md) ([그래도 100% 보장은 아님](https://www.reddit.com/r/ClaudeCode/comments/1qn9pb9/claudemd_says_must_use_agent_claude_ignores_it_80/)) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179840848597422) [![Dex](!/tags/community-dex.svg)](https://www.humanlayer.dev/blog/writing-a-good-claude-md) |
+| .claude/rules/*.md는 CLAUDE.md처럼 모든 세션에 자동 로드됨 — paths: YAML frontmatter를 추가하면 Claude가 glob에 매칭되는 파일을 만질 때만 lazy-load | [![Claude](!/tags/claude.svg)](https://code.claude.com/docs/en/memory#organize-rules-with-clauderules) |
+| 도메인별 CLAUDE.md 규칙을 [\<important if="..."\> 태그](https://www.hlyr.dev/blog/stop-claude-from-ignoring-your-claude-md)로 감싸 파일이 길어져도 Claude가 무시하지 않도록 | [![Dex](!/tags/community-dex.svg)](https://www.hlyr.dev/blog/stop-claude-from-ignoring-your-claude-md) |
+| 모노레포엔 [여러 CLAUDE.md](best-practice/claude-memory.md) 사용 — 조상 + 자손 로딩 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2016339448863355206) |
+| 큰 지침은 [.claude/rules/](https://code.claude.com/docs/en/memory#organize-rules-with-clauderules)로 분리 | [![Claude](!/tags/claude.svg)](https://code.claude.com/docs/en/memory#organize-rules-with-clauderules) |
+| 아무 개발자나 Claude를 켜고 "테스트 돌려"라고 하면 첫 시도에 되어야 함 — 안 되면 CLAUDE.md에 필수 설정/빌드/테스트 명령이 빠진 것 | [![Dex](!/tags/community-dex.svg)](https://x.com/dexhorthy/status/2034713765401551053) |
+| 코드베이스를 깨끗이 유지하고 마이그레이션을 끝낼 것 — 부분 마이그레이션된 프레임워크는 모델이 잘못된 패턴을 고르게 혼란시킴 | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=1112) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=1112) |
+| harness가 강제하는 동작(속성·권한·모델)엔 [settings.json](best-practice/claude-settings.md) 사용 — attribution.commit: ""이 결정론적인데 "NEVER add Co-Authored-By"를 CLAUDE.md에 넣지 말 것 | [![davila7](!/tags/community-davila7.svg)](https://x.com/dani_avila7/status/2036182734310195550) |
 
 <a id="tips-agents"></a><img src="!/tags/a.svg" height="14"> **에이전트 (4)**
 
 | 팁 | 출처 |
 |-----|--------|
-| have feature specific [sub-agents](https://code.claude.com/docs/en/sub-agents) (extra context) with [skills](https://code.claude.com/docs/en/skills) (progressive disclosure) instead of general qa, backend engineer | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179850139000872) |
-| say "use subagents" to throw more compute at a problem — offload tasks to keep your main context clean and focused 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742755737555434) |
-| [agent teams with tmux](https://code.claude.com/docs/en/agent-teams) and [git worktrees](https://x.com/bcherny/status/2025007393290272904) for parallel development | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2025007393290272904) |
-| use [test time compute](https://code.claude.com/docs/en/sub-agents) — separate context windows make results better; one agent can cause bugs and another (same model) can find them | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2031151689219321886) |
+| 범용 QA·백엔드 엔지니어 대신, [스킬](https://code.claude.com/docs/en/skills)(점진적 공개)을 가진 기능별 [서브에이전트](https://code.claude.com/docs/en/sub-agents)(추가 컨텍스트)를 둘 것 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179850139000872) |
+| "use subagents"라고 말해 문제에 더 많은 컴퓨트를 투입 — 작업을 위임해 메인 컨텍스트를 깨끗하고 집중되게 유지 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742755737555434) |
+| 병렬 개발엔 [tmux 에이전트 팀](https://code.claude.com/docs/en/agent-teams)과 [git worktrees](https://x.com/bcherny/status/2025007393290272904) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2025007393290272904) |
+| [test time compute](https://code.claude.com/docs/en/sub-agents) 활용 — 분리된 컨텍스트 창이 결과를 개선; 한 에이전트가 버그를 만들고 다른(같은 모델) 에이전트가 그것을 찾을 수 있음 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2031151689219321886) |
 
 <a id="tips-commands"></a><img src="!/tags/c.svg" height="14"> **커맨드 (3)**
 
 | 팁 | 출처 |
 |-----|--------|
-| use [commands](https://code.claude.com/docs/en/slash-commands) for your workflows instead of [sub-agents](https://code.claude.com/docs/en/sub-agents) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179847949500714) |
-| use [slash commands](https://code.claude.com/docs/en/slash-commands) for every "inner loop" workflow you do many times a day — saves repeated prompting, commands live in .claude/commands/ and are checked into git | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179847949500714) |
-| if you do something more than once a day, turn it into a [skill](https://code.claude.com/docs/en/skills) or [command](https://code.claude.com/docs/en/slash-commands) — build /techdebt, context-dump, or analytics commands | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742748984742078) |
+| 워크플로우엔 [서브에이전트](https://code.claude.com/docs/en/sub-agents) 대신 [커맨드](https://code.claude.com/docs/en/slash-commands) 사용 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179847949500714) |
+| 하루에 여러 번 하는 모든 "inner loop" 워크플로우엔 [슬래시 커맨드](https://code.claude.com/docs/en/slash-commands) — 반복 프롬프팅을 절약, 커맨드는 .claude/commands/에 있고 git에 커밋됨 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179847949500714) |
+| 하루 한 번 이상 하는 일은 [스킬](https://code.claude.com/docs/en/skills)이나 [커맨드](https://code.claude.com/docs/en/slash-commands)로 만들기 — /techdebt, context-dump, analytics 커맨드 구축 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742748984742078) |
 
 <a id="tips-skills"></a><img src="!/tags/s.svg" height="14"> **스킬 (9)**
 
 | 팁 | 출처 |
 |-----|--------|
-| use [context: fork](https://code.claude.com/docs/en/skills) to run a skill in an isolated subagent — main context only sees the final result, not intermediate tool calls. The agent field lets you set the subagent type | [![Lydia](!/tags/lydia.svg)](https://x.com/lydiahallie/status/2033603164398883042) |
-| use [skills in subfolders](reports/claude-skills-for-larger-mono-repos.md) for monorepos | [![Claude](!/tags/claude.svg)](https://code.claude.com/docs/en/skills) |
-| skills are folders, not files — use references/, scripts/, examples/ subdirectories for [progressive disclosure](https://code.claude.com/docs/en/skills) | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| build a Gotchas section in every skill — highest-signal content, add Claude's failure points over time | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| skill description field is a trigger, not a summary — write it for the model ("when should I fire?") | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| don't state the obvious in skills — focus on what pushes Claude out of its default behavior 🚫👶 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| don't railroad Claude in skills — give goals and constraints, not prescriptive step-by-step instructions 🚫👶 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| include scripts and libraries in skills so Claude composes rather than reconstructs boilerplate | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| embed !command in SKILL.md to inject dynamic shell output into the prompt — Claude runs it on invocation and the model only sees the result | [![Lydia](!/tags/lydia.svg)](https://x.com/lydiahallie/status/2034337963820327017) |
+| [context: fork](https://code.claude.com/docs/en/skills)로 스킬을 격리된 서브에이전트에서 실행 — 메인 컨텍스트는 중간 도구 호출이 아니라 최종 결과만 봄. agent 필드로 서브에이전트 타입을 지정 | [![Lydia](!/tags/lydia.svg)](https://x.com/lydiahallie/status/2033603164398883042) |
+| 모노레포엔 [하위 폴더 스킬](reports/claude-skills-for-larger-mono-repos.md) 사용 | [![Claude](!/tags/claude.svg)](https://code.claude.com/docs/en/skills) |
+| 스킬은 파일이 아니라 폴더 — [점진적 공개](https://code.claude.com/docs/en/skills)를 위해 references/, scripts/, examples/ 하위 디렉토리 사용 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| 모든 스킬에 Gotchas 섹션을 구축 — 가장 신호가 강한 콘텐츠, Claude의 실패 지점을 시간이 지나며 추가 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| 스킬 description 필드는 요약이 아니라 트리거 — 모델을 위해 작성("나는 언제 발동해야 하나?") | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| 스킬에 뻔한 내용을 쓰지 말 것 — Claude를 기본 동작에서 벗어나게 하는 것에 집중 🚫👶 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| 스킬에서 Claude를 몰아붙이지 말 것 — 처방적 단계별 지침이 아니라 목표와 제약을 줄 것 🚫👶 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| 스킬에 스크립트와 라이브러리를 포함해 Claude가 보일러플레이트를 재구성하지 않고 조합하도록 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| SKILL.md에 !command를 임베드해 동적 셸 출력을 프롬프트에 주입 — Claude가 호출 시 실행하고 모델은 결과만 봄 | [![Lydia](!/tags/lydia.svg)](https://x.com/lydiahallie/status/2034337963820327017) |
 
 <a id="tips-hooks"></a>■ **훅 (5)**
 
 | 팁 | 출처 |
 |-----|--------|
-| use [on-demand hooks](https://code.claude.com/docs/en/skills) in skills — /careful blocks destructive commands, /freeze blocks edits outside a directory | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| [measure skill usage](https://code.claude.com/docs/en/skills) with a PreToolUse hook to find popular or undertriggering skills | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| use a [PostToolUse hook](https://code.claude.com/docs/en/hooks) to auto-format code — Claude generates well-formatted code, the hook handles the last 10% to avoid CI failures | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179852047335529) |
-| route [permission requests](https://code.claude.com/docs/en/hooks) to Opus via a hook — let it scan for attacks and auto-approve safe ones 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742755737555434) |
-| use a [Stop hook](https://code.claude.com/docs/en/hooks) to nudge Claude to keep going or verify its work at the end of a turn | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021701059253874861) |
+| 스킬에 [on-demand 훅](https://code.claude.com/docs/en/skills) 사용 — /careful은 파괴적 명령을 차단, /freeze는 디렉토리 밖 편집을 차단 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| PreToolUse 훅으로 [스킬 사용량을 측정](https://code.claude.com/docs/en/skills)해 인기 있거나 저발동하는 스킬을 찾기 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| [PostToolUse 훅](https://code.claude.com/docs/en/hooks)으로 코드 자동 포맷 — Claude가 잘 포맷된 코드를 생성하고, 훅이 CI 실패 방지를 위한 마지막 10%를 처리 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179852047335529) |
+| 훅을 통해 [권한 요청](https://code.claude.com/docs/en/hooks)을 Opus로 라우팅 — 공격을 스캔하고 안전한 것은 자동 승인하게 하기 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742755737555434) |
+| [Stop 훅](https://code.claude.com/docs/en/hooks)으로 턴 끝에 Claude가 계속 진행하거나 작업을 검증하도록 넛지 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021701059253874861) |
 
 <a id="tips-workflows"></a>■ **워크플로우 (5)**
 
 | 팁 | 출처 |
 |-----|--------|
-| use [/model](https://code.claude.com/docs/en/model-config) to select model and reasoning, [/context](https://code.claude.com/docs/en/interactive-mode) to see context usage, [/usage](https://code.claude.com/docs/en/costs) to check plan limits, [/extra-usage](https://code.claude.com/docs/en/interactive-mode) to configure overflow billing, [/config](https://code.claude.com/docs/en/settings) to configure settings — use Opus for plan mode and Sonnet for code to get the best of both | [![Cat](!/tags/cat-wu.svg)](https://x.com/_catwu/status/1955694117264261609) |
-| always use [thinking mode](https://code.claude.com/docs/en/model-config) true (to see reasoning) and [Output Style](https://code.claude.com/docs/en/output-styles) Explanatory (to see detailed output with ★ Insight boxes) in [/config](https://code.claude.com/docs/en/settings) for better understanding of Claude's decisions | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179838864666847) |
-| use ultrathink keyword in prompts for [high effort reasoning](https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking#tips-and-best-practices) | [![Claude](!/tags/claude.svg)](https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking#tips-and-best-practices) |
-| /focus mode hides all intermediate work and shows only the final result — trust the model to run the right commands and just look at the outcome (toggle with /focus) | [![Boris](!/tags/boris-cherny.svg)](tips/claude-boris-6-tips-16-apr-26.md) |
-| tune effort level with Opus 4.7's adaptive thinking — low for speed and fewer tokens, max for most intelligence (slider: low · medium · high · xhigh · max) | [![Boris](!/tags/boris-cherny.svg)](tips/claude-boris-6-tips-16-apr-26.md) |
+| [/model](https://code.claude.com/docs/en/model-config)로 모델·추론 선택, [/context](https://code.claude.com/docs/en/interactive-mode)로 컨텍스트 사용량 확인, [/usage](https://code.claude.com/docs/en/costs)로 플랜 한도 확인, [/extra-usage](https://code.claude.com/docs/en/interactive-mode)로 초과 청구 설정, [/config](https://code.claude.com/docs/en/settings)로 설정 구성 — plan mode엔 Opus, 코드엔 Sonnet을 써서 둘의 장점을 모두 | [![Cat](!/tags/cat-wu.svg)](https://x.com/_catwu/status/1955694117264261609) |
+| [/config](https://code.claude.com/docs/en/settings)에서 항상 [thinking mode](https://code.claude.com/docs/en/model-config) true(추론을 보기)와 [Output Style](https://code.claude.com/docs/en/output-styles) Explanatory(★ Insight 박스로 상세 출력 보기)를 사용해 Claude의 결정을 더 잘 이해 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179838864666847) |
+| 프롬프트에 ultrathink 키워드를 써서 [고강도 추론](https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking#tips-and-best-practices) | [![Claude](!/tags/claude.svg)](https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking#tips-and-best-practices) |
+| /focus 모드는 모든 중간 작업을 숨기고 최종 결과만 표시 — 모델이 올바른 명령을 실행하리라 믿고 결과만 보기 (/focus로 토글) | [![Boris](!/tags/boris-cherny.svg)](tips/claude-boris-6-tips-16-apr-26.md) |
+| Opus 4.7의 적응형 사고로 effort 레벨을 조정 — 속도와 토큰 절약엔 low, 최고 지능엔 max (슬라이더: low · medium · high · xhigh · max) | [![Boris](!/tags/boris-cherny.svg)](tips/claude-boris-6-tips-16-apr-26.md) |
 
 <a id="tips-workflows-advanced"></a>■ **워크플로우 고급 (9)**
 
 | 팁 | 출처 |
 |-----|--------|
-| use ASCII diagrams a lot to understand your architecture | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742759218794768) |
-| use [/loop](https://code.claude.com/docs/en/scheduled-tasks) for local recurring monitoring (up to 7 days) · use [/schedule](https://code.claude.com/docs/en/routines) for cloud-based recurring tasks that run even when your machine is off | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2038454341884154269) |
-| use [Ralph Wiggum plugin](https://github.com/shanraisshan/ralph-wiggum-self-evolving-loop) for long-running autonomous tasks | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179858435281082) |
-| [/permissions](https://code.claude.com/docs/en/permissions) with wildcard syntax (Bash(npm run *), Edit(/docs/**)) instead of dangerously-skip-permissions | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179854077407667) |
-| [/sandbox](https://code.claude.com/docs/en/sandboxing) to reduce permission prompts with file and network isolation — 84% reduction internally | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021700506465579443) [![Cat](!/tags/cat-wu.svg)](https://creatoreconomy.so/p/inside-claude-code-how-an-ai-native-actually-works-cat-wu) |
-| invest in [product verification](https://code.claude.com/docs/en/skills) skills (signup-flow-driver, checkout-verifier) — worth spending a week to perfect | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
-| use [auto mode](https://code.claude.com/docs/en/permission-modes#eliminate-prompts-with-auto-mode) instead of dangerously-skip-permissions — a model-based classifier decides if each command is safe and auto-approves, pauses and asks if risky. Shift+Tab to cycle Ask → Plan → Auto modes 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](tips/claude-boris-6-tips-16-apr-26.md) |
-| use /less-permission-prompts skill to scan session history for safe bash/MCP commands that repeatedly prompt, then get a recommended allowlist to paste into [settings](best-practice/claude-settings.md) | [![Boris](!/tags/boris-cherny.svg)](tips/claude-boris-6-tips-16-apr-26.md) |
-| build a /go skill that (1) tests end-to-end via bash/browser/computer use (2) runs /simplify (3) puts up a PR — so when you come back, you know the code works 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](tips/claude-boris-6-tips-16-apr-26.md) |
+| 아키텍처를 이해하기 위해 ASCII 다이어그램을 적극 활용 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742759218794768) |
+| 로컬 반복 모니터링(최대 7일)엔 [/loop](https://code.claude.com/docs/en/scheduled-tasks) · 머신이 꺼져 있어도 도는 클라우드 기반 반복 작업엔 [/schedule](https://code.claude.com/docs/en/routines) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2038454341884154269) |
+| 장시간 자율 작업엔 [Ralph Wiggum 플러그인](https://github.com/shanraisshan/ralph-wiggum-self-evolving-loop) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179858435281082) |
+| dangerously-skip-permissions 대신 와일드카드 문법을 쓴 [/permissions](https://code.claude.com/docs/en/permissions) (Bash(npm run *), Edit(/docs/**)) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2007179854077407667) |
+| [/sandbox](https://code.claude.com/docs/en/sandboxing)로 파일·네트워크 격리를 통해 권한 프롬프트 감소 — 내부적으로 84% 감소 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021700506465579443) [![Cat](!/tags/cat-wu.svg)](https://creatoreconomy.so/p/inside-claude-code-how-an-ai-native-actually-works-cat-wu) |
+| [제품 검증](https://code.claude.com/docs/en/skills) 스킬(signup-flow-driver, checkout-verifier)에 투자 — 일주일 들여 완성할 가치가 있음 | [![Thariq](!/tags/thariq.svg)](https://x.com/trq212/status/2033949937936085378) |
+| dangerously-skip-permissions 대신 [auto mode](https://code.claude.com/docs/en/permission-modes#eliminate-prompts-with-auto-mode) 사용 — 모델 기반 분류기가 각 명령의 안전성을 판단해 자동 승인하고, 위험하면 멈추고 물음. Shift+Tab으로 Ask → Plan → Auto 모드 순환 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](tips/claude-boris-6-tips-16-apr-26.md) |
+| /less-permission-prompts 스킬로 반복해서 프롬프트되는 안전한 bash/MCP 명령을 세션 기록에서 스캔한 뒤, [settings](best-practice/claude-settings.md)에 붙여넣을 추천 allowlist를 받기 | [![Boris](!/tags/boris-cherny.svg)](tips/claude-boris-6-tips-16-apr-26.md) |
+| (1) bash/브라우저/컴퓨터 사용으로 end-to-end 테스트 (2) /simplify 실행 (3) PR 올리기를 하는 /go 스킬을 구축 — 돌아왔을 때 코드가 동작함을 알 수 있도록 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](tips/claude-boris-6-tips-16-apr-26.md) |
 
 <a id="tips-git-pr"></a>■ **Git / PR (5)**  <!-- Git/PR은 고유명사로 원형 유지 -->
 
 | 팁 | 출처 |
 |-----|--------|
-| keep PRs small and focused — [p50 of 118 lines](tips/claude-boris-2-tips-25-mar-26.md) (141 PRs, 45K lines changed in a day), one feature per PR, easier to review and revert | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2038552880018538749) |
-| always [squash merge](tips/claude-boris-2-tips-25-mar-26.md) PRs — clean linear history, one commit per feature, easy git revert and git bisect | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2038552880018538749) |
-| commit often — try to commit at least once per hour, as soon as task is completed, commit | ![Shayan](!/tags/community-shayan.svg) |
-| tag [@claude](https://github.com/apps/claude) on a coworker's PR to auto-generate lint rules for recurring review feedback — automate yourself out of code review 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=2715) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=2715) |
-| use [/code-review](https://code.claude.com/docs/en/code-review) for multi-agent PR analysis — catches bugs, security vulnerabilities, and regressions before merge | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2031089411820228645) |
+| PR을 작고 집중되게 유지 — [p50 118줄](tips/claude-boris-2-tips-25-mar-26.md) (하루에 141개 PR, 4.5만 줄 변경), PR당 기능 하나, 리뷰·되돌리기가 쉬움 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2038552880018538749) |
+| PR은 항상 [squash merge](tips/claude-boris-2-tips-25-mar-26.md) — 깨끗한 선형 히스토리, 기능당 커밋 하나, git revert·git bisect가 쉬움 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2038552880018538749) |
+| 자주 커밋 — 최소 시간당 한 번, 작업이 완료되는 즉시 커밋 | ![Shayan](!/tags/community-shayan.svg) |
+| 동료의 PR에 [@claude](https://github.com/apps/claude)를 태그해 반복되는 리뷰 피드백에 대한 lint 규칙을 자동 생성 — 코드 리뷰에서 자신을 자동화 🚫👶 | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=2715) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=2715) |
+| 멀티에이전트 PR 분석엔 [/code-review](https://code.claude.com/docs/en/code-review) — 병합 전에 버그·보안 취약점·회귀를 포착 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2031089411820228645) |
 
 <a id="tips-debugging"></a>■ **디버깅 (6)**
 
 | 팁 | 출처 |
 |-----|--------|
-| make it a habit to take screenshots and share with Claude whenever you are stuck with any issue | ![Shayan](!/tags/community-shayan.svg) |
-| use mcp ([Claude in Chrome](https://code.claude.com/docs/en/chrome), [Playwright](https://github.com/microsoft/playwright-mcp), [Chrome DevTools](https://developer.chrome.com/blog/chrome-devtools-mcp)) to let claude see chrome console logs on its own | [![Claude](!/tags/claude.svg)](https://code.claude.com/docs/en/chrome) |
-| always ask claude to run the terminal (you want to see logs of) as a background task for better debugging | ![Shayan](!/tags/community-shayan.svg) |
-| [/doctor](https://code.claude.com/docs/en/cli-reference) to diagnose installation, authentication, and configuration issues | ![Shayan](!/tags/community-shayan.svg) |
-| use a [cross-model](development-workflows/cross-model-workflow/cross-model-workflow.md) for QA — e.g. [Codex](https://github.com/shanraisshan/codex-cli-best-practice) for plan and implementation review | ![Shayan](!/tags/community-shayan.svg) |
-| agentic search (glob + grep) beats RAG — Claude Code tried and discarded vector databases because code drifts out of sync and permissions are complex | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=3095) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=3095) |
+| 어떤 이슈에 막힐 때마다 스크린샷을 찍어 Claude와 공유하는 습관을 들일 것 | ![Shayan](!/tags/community-shayan.svg) |
+| mcp([Claude in Chrome](https://code.claude.com/docs/en/chrome), [Playwright](https://github.com/microsoft/playwright-mcp), [Chrome DevTools](https://developer.chrome.com/blog/chrome-devtools-mcp))를 사용해 Claude가 크롬 콘솔 로그를 스스로 보게 하기 | [![Claude](!/tags/claude.svg)](https://code.claude.com/docs/en/chrome) |
+| 더 나은 디버깅을 위해 (로그를 보고 싶은) 터미널은 항상 Claude에게 백그라운드 작업으로 실행하도록 요청 | ![Shayan](!/tags/community-shayan.svg) |
+| [/doctor](https://code.claude.com/docs/en/cli-reference)로 설치·인증·설정 문제를 진단 | ![Shayan](!/tags/community-shayan.svg) |
+| QA엔 [cross-model](development-workflows/cross-model-workflow/cross-model-workflow.md) 활용 — 예: 계획·구현 리뷰에 [Codex](https://github.com/shanraisshan/codex-cli-best-practice) | ![Shayan](!/tags/community-shayan.svg) |
+| 에이전틱 검색(glob + grep)이 RAG를 능가 — 코드가 동기화에서 벗어나고 권한이 복잡하기 때문에 Claude Code는 벡터 DB를 시도했다 폐기함 | [![Boris](!/tags/boris-cherny.svg)](https://youtu.be/julbw1JuAz0?t=3095) [![Video](!/tags/video.svg)](https://youtu.be/julbw1JuAz0?t=3095) |
 
 <a id="tips-utilities"></a>■ **유틸리티 (5)**
 
 | 팁 | 출처 |
 |-----|--------|
-| [iTerm](https://iterm2.com/)/[Ghostty](https://ghostty.org/)/[tmux](https://github.com/tmux/tmux) terminals instead of IDE ([VS Code](https://code.visualstudio.com/)/[Cursor](https://www.cursor.com/)) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742753971769626) |
-| [/voice](https://code.claude.com/docs/en/voice-dictation) or [Wispr Flow](https://wisprflow.ai) for voice prompting (10x productivity) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2038454362226467112) |
-| [claude-code-hooks](https://github.com/shanraisshan/claude-code-hooks) for claude feedback | ![Shayan](!/tags/community-shayan.svg) |
-| [status line](https://github.com/shanraisshan/claude-code-status-line) for context awareness and fast compacting | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021700784019452195) ![Shayan](!/tags/community-shayan.svg) |
-| explore [settings.json](best-practice/claude-settings.md) features like [Plans Directory](best-practice/claude-settings.md#plans-directory), [Spinner Verbs](best-practice/claude-settings.md#display--ux) for a personalized experience | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021701145023197516) |
+| IDE([VS Code](https://code.visualstudio.com/)/[Cursor](https://www.cursor.com/)) 대신 [iTerm](https://iterm2.com/)/[Ghostty](https://ghostty.org/)/[tmux](https://github.com/tmux/tmux) 터미널 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2017742753971769626) |
+| 음성 프롬프팅엔 [/voice](https://code.claude.com/docs/en/voice-dictation)나 [Wispr Flow](https://wisprflow.ai) (10배 생산성) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2038454362226467112) |
+| Claude 피드백엔 [claude-code-hooks](https://github.com/shanraisshan/claude-code-hooks) | ![Shayan](!/tags/community-shayan.svg) |
+| 컨텍스트 인식과 빠른 압축엔 [status line](https://github.com/shanraisshan/claude-code-status-line) | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021700784019452195) ![Shayan](!/tags/community-shayan.svg) |
+| 개인화된 경험을 위해 [Plans Directory](best-practice/claude-settings.md#plans-directory), [Spinner Verbs](best-practice/claude-settings.md#display--ux) 같은 [settings.json](best-practice/claude-settings.md) 기능을 탐색 | [![Boris](!/tags/boris-cherny.svg)](https://x.com/bcherny/status/2021701145023197516) |
 
 <a id="tips-daily"></a>■ **매일 (2)**
 
 | 팁 | 출처 |
 |-----|--------|
-| [update](https://code.claude.com/docs/en/setup) Claude Code daily | ![Shayan](!/tags/community-shayan.svg) |
-| start your day by reading the [changelog](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) | ![Shayan](!/tags/community-shayan.svg) |
+| Claude Code를 매일 [업데이트](https://code.claude.com/docs/en/setup) | ![Shayan](!/tags/community-shayan.svg) |
+| 하루를 [changelog](https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md) 읽기로 시작 | ![Shayan](!/tags/community-shayan.svg) |
 
 ![Boris Cherny + Team](!/tags/claude.svg)
 
@@ -570,16 +570,16 @@ Claude Code를 다른 모델 — Codex, Gemini, GPT, Kimi, DeepSeek, 로컬 — 
 
 ![Developed by](!/tags/developed-by.svg)
 
-> | # | Workflow | Description |
+> | # | 워크플로우 | 설명 |
 > |---|----------|-------------|
-> | 1 | /workflows:development-workflows | Update the DEVELOPMENT WORKFLOWS table and cross-workflow analysis report by researching all 10 workflow repos in parallel |
-> | 2 | /workflows:skill-collections | Update the SKILL COLLECTIONS table by researching all 5 skill-collection repos in parallel |
-> | 3 | /workflows:agent-collections | Update the AGENT COLLECTIONS table by researching all agent-collection repos in parallel |
-> | 4 | /workflows:best-practice:workflow-concepts | Update the README CONCEPTS section with the latest Claude Code features and concepts |
-> | 5 | /workflows:best-practice:workflow-claude-settings | Track Claude Code settings report changes and find what needs updating |
-> | 6 | /workflows:best-practice:workflow-claude-subagents | Track Claude Code subagents report changes and find what needs updating |
-> | 7 | /workflows:best-practice:workflow-claude-commands | Track Claude Code commands report changes and find what needs updating |
-> | 8 | /workflows:best-practice:workflow-claude-skills | Track Claude Code skills report changes and find what needs updating |
+> | 1 | /workflows:development-workflows | 10개 워크플로우 저장소를 병렬로 조사해 DEVELOPMENT WORKFLOWS 표와 워크플로우 간 분석 리포트를 갱신 |
+> | 2 | /workflows:skill-collections | 5개 스킬 컬렉션 저장소를 병렬로 조사해 SKILL COLLECTIONS 표를 갱신 |
+> | 3 | /workflows:agent-collections | 모든 에이전트 컬렉션 저장소를 병렬로 조사해 AGENT COLLECTIONS 표를 갱신 |
+> | 4 | /workflows:best-practice:workflow-concepts | 최신 Claude Code 기능·개념으로 README CONCEPTS 섹션을 갱신 |
+> | 5 | /workflows:best-practice:workflow-claude-settings | Claude Code settings 리포트 변경을 추적하고 갱신이 필요한 부분을 찾기 |
+> | 6 | /workflows:best-practice:workflow-claude-subagents | Claude Code subagents 리포트 변경을 추적하고 갱신이 필요한 부분을 찾기 |
+> | 7 | /workflows:best-practice:workflow-claude-commands | Claude Code commands 리포트 변경을 추적하고 갱신이 필요한 부분을 찾기 |
+> | 8 | /workflows:best-practice:workflow-claude-skills | Claude Code skills 리포트 변경을 추적하고 갱신이 필요한 부분을 찾기 |
 
 ## Extras
 
