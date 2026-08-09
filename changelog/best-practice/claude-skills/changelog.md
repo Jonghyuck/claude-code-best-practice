@@ -471,3 +471,189 @@ No drift detected — frontmatter fields (16) and bundled skills (12) are fully 
 ## [2026-07-11 10:02 AM PKT] Claude Code v2.1.207
 
 No drift detected — frontmatter fields (16) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-12 10:03 AM PKT] Claude Code v2.1.207
+
+No drift detected — frontmatter fields (16) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-13 10:03 AM PKT] Claude Code v2.1.207
+
+No drift detected — frontmatter fields (16) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-14 10:03 AM PKT] Claude Code v2.1.208
+
+No drift detected — frontmatter fields (16) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-15 10:03 AM PKT] Claude Code v2.1.210
+
+No drift detected — frontmatter fields (16) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-16 10:03 AM PKT] Claude Code v2.1.211
+
+No drift detected — frontmatter fields (16) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-17 10:03 AM PKT] Claude Code v2.1.212
+
+No drift detected — frontmatter fields (16) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-18 10:04 AM PKT] Claude Code v2.1.214
+
+No drift detected — frontmatter fields (16) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-19 10:03 AM PKT] Claude Code v2.1.215
+
+No drift detected — frontmatter fields (16) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-20 10:04 AM PKT] Claude Code v2.1.215
+
+No drift detected — frontmatter fields (16) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-21 10:03 AM PKT] Claude Code v2.1.216
+
+No drift detected — frontmatter fields (16) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-22 10:03 AM PKT] Claude Code v2.1.217
+
+No drift detected — frontmatter fields (16) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-23 10:03 AM PKT] Claude Code v2.1.218
+
+No drift detected — frontmatter fields (16) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-24 10:04 AM PKT] Claude Code v2.1.218
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `background` field to frontmatter table — only applies with `context: fork`; set to `false` to wait for the forked subagent's result in the current turn instead of running in the background (default: `true`). Count updated 16→17 | ✅ COMPLETE (added `background` after `agent` in frontmatter table, count updated 16→17) |
+| 2 | MED | New Skill | Investigate `deep-research` as a potential bundled skill — changelog v2.1.216 changed its invocation to manual-only, but official docs also use it as a user-authored skill example, making bundled status ambiguous | ✋ ON HOLD (naming ambiguity: docs use `deep-research` as both a bundled invocation example and a user-authored skill example; needs human review to confirm bundled status before adding) |
+| 3 | LOW | New Skill | Investigate `ultrareview` as a potential bundled skill — changelog v2.1.218 mentions fixing `/ultrareview` with descriptive arguments, suggesting it may be a bundled max-effort code-review variant | ✋ ON HOLD (low confidence: changelog mention is insufficient to confirm bundled status; needs human review) |
+
+---
+
+## [2026-07-25 10:06 AM PKT] Claude Code v2.1.220
+
+No new drift detected — frontmatter fields (17) and bundled skills (13) are fully synchronized with official docs.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Resolved ON HOLD | `deep-research` (held 2026-07-24): confirmed `/deep-research` is tagged Workflow in the commands reference, not a bundled skill | ❌ INVALID (commands reference marks it as Workflow — correctly absent from bundled skills table) |
+| 2 | LOW | Resolved ON HOLD | `ultrareview` (held 2026-07-24): confirmed not a bundled skill — absent from commands reference bundled skills list | ❌ INVALID (absent from official commands reference; changelog mention was insufficient to confirm bundled status) |
+
+---
+
+## [2026-07-26 10:04 AM PKT] Claude Code v2.1.220
+
+No drift detected — frontmatter fields (17) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-27 10:07 AM PKT] Claude Code v2.1.220
+
+No drift detected — frontmatter fields (17) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-28 10:09 AM PKT] Claude Code v2.1.220
+
+No drift detected — frontmatter fields (17) and bundled skills (13) are fully synchronized with official docs.
+
+---
+
+## [2026-07-29 10:06 AM PKT] Claude Code v2.1.220
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Skill | Add `review` to official bundled skills table — fast single-pass, read-only review of a GitHub pull request; became Skill-tool-invocable in v2.1.108; from v2.1.186–v2.1.201 used the `/code-review medium` engine; v2.1.202 reverted to fast single-pass. Count updated 13→15 | ✅ COMPLETE (added as row 14, count updated 13→15) |
+| 2 | HIGH | New Skill | Add `security-review` to official bundled skills table — review the current diff for security vulnerabilities and suggest fixes; supports `--fix` and `--comment` flags; became Skill-tool-invocable in v2.1.108. Count updated 13→15 | ✅ COMPLETE (added as row 15, count updated 13→15) |
+
+---
+
+## [2026-07-30 10:08 AM PKT] Claude Code v2.1.220
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Potential Removed Skill | `review` (row 14) and `security-review` (row 15) are in local report but lack the `**[Skill]**` marker in the official commands reference — investigate whether this is a docs omission or a product removal | ✋ ON HOLD (likely a docs omission — both skills remain live and Skill-tool-invocable in the current session; awaiting human review before removing) |
+
+---
+
+## [2026-07-31 10:08 AM PKT] Claude Code v2.1.220
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Potential Removed Skills | `review` (row 14) and `security-review` (row 15) classification confirmed by today's research: official docs explicitly distinguish bundled skills (13 total) from "built-in commands reachable via the Skill tool" (`/init`, `/review`, `/security-review`) — report's bundled count of 15 overstates by 2; `/init` is also Skill-tool-invocable per docs but absent from report | ✋ ON HOLD (recurring from 2026-07-30; now confirmed as classification drift, not a docs omission; awaiting human review before reclassifying rows or moving them to a separate Skill-tool-invocable built-ins section) |
+
+---
+
+## [2026-08-01 10:06 AM PKT] Claude Code v2.1.220
+
+No new drift detected — frontmatter fields (17) and bundled skills (15) are fully synchronized with official docs.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Resolved ON HOLD | `review` and `security-review` classification (held since 2026-07-30): official commands reference now confirms both are labeled **Skill** with 15 total bundled skills — report count of 15 is correct | ❌ INVALID (commands reference confirms both as bundled skills; report count of 15 is correct and no reclassification needed) |
+
+---
+
+## [2026-08-02 10:05 AM PKT] Claude Code v2.1.220
+
+No new frontmatter drift detected — frontmatter fields (17) are fully synchronized with official docs.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Potential Removed Skills | `review` (row 14) and `security-review` (row 15) are not marked `**[Skill]**` in the official commands reference — raw marker count yields 13 bundled skills; official skills docs describe these two as built-in commands reachable via the Skill tool, not bundled skills. Count should be 13, not 15 | ✋ ON HOLD (recurring from 2026-07-30; 2026-08-01 run marked INVALID based on commands reference, but today's raw marker count re-confirms 13 bundled skills; awaiting human review before removing rows 14–15 or updating count) |
+
+---
+
+## [2026-08-07 10:08 AM PKT] Claude Code v2.1.224
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `metadata` to frontmatter table — free-form YAML map for own key-value data read by external tooling from `SKILL.md`; Claude Code accepts but does not act on it; part of the Agent Skills spec. Count updated 17→20 | ✅ COMPLETE (added to frontmatter table after `shell`, count updated 17→20) |
+| 2 | HIGH | New Field | Add `license` to frontmatter table — license covering the skill; part of Agent Skills spec; Claude Code accepts but does not act on it. Count updated 17→20 | ✅ COMPLETE (added to frontmatter table after `metadata`, count updated 17→20) |
+| 3 | HIGH | New Field | Add `compatibility` to frontmatter table — environment requirements for the skill (max 500 chars), intended products or system prerequisites; part of Agent Skills spec; Claude Code accepts but does not act on it. Count updated 17→20 | ✅ COMPLETE (added to frontmatter table after `license`, count updated 17→20) |
+| 4 | HIGH | Removed Skill | `review` (row 14) confirmed changed to alias of `/code-review` in v2.1.223 — no longer a distinct bundled skill; changelog v2.1.223: "Changed `/review` to be an alias of `/code-review`"; remove row 14 from bundled skills table | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 5 | MED | Potential Removed Skill | `security-review` (row 15) not marked `**[Skill]**` in official commands reference — official docs list 13 bundled skills; may be a docs omission since skill remains Skill-tool-invocable in live session | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+
+---
+
+## [2026-08-08 10:06 AM PKT] Claude Code v2.1.226
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 14) — collapsed into `/code-review` alias in v2.1.223; commands reference no longer marks it **[Skill]**; report description describes pre-v2.1.223 behavior and is now stale | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 15) not marked **[Skill]** in commands reference — official docs list 13 bundled skills; skill remains Skill-tool-invocable per CHANGELOG but structural bundled-skill classification requires human review | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing) |
+
+---
+
+## [2026-08-09 10:09 AM PKT] Claude Code v2.1.226
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 14) — confirmed alias of `/code-review` since v2.1.223; commands reference shows no **[Skill]** marker; local description still describes pre-v2.1.223 standalone behavior | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 15) — docs classify as built-in command reachable via Skill tool, not a bundled skill; official docs list 13 bundled skills (excludes both `review` and `security-review`); commands reference shows no **[Skill]** marker | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing) |

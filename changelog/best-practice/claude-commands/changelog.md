@@ -631,3 +631,205 @@ No priority action items — report is fully in sync with official documentation
 | # | Priority | Type | Action | Status |
 |---|----------|------|--------|--------|
 | 1 | MED | Changed Description | Update `/setup-vertex` — rename "Google Vertex AI" → "Google Cloud's Agent Platform" per official docs rebranding; retain `CLAUDE_CODE_USE_VERTEX=1` visibility note | ✅ COMPLETE (updated product name at #5 in Auth tag) |
+
+---
+
+## [2026-07-12 11:07 AM PKT] Claude Code v2.1.207
+
+No priority action items — report is fully in sync with official documentation (16 frontmatter fields, 86 built-in commands).
+
+---
+
+## [2026-07-13 11:10 AM PKT] Claude Code v2.1.207
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | LOW | Scope Decision | Review `/doctor` — reclassified as bundled Skill in v2.1.205 (exempt from `disableBundledSkills`); currently listed in report as built-in (row #29, Debug tag). If report scope is strictly built-in commands only, consider removing. | ✋ ON HOLD (command still exists and works; pending user decision on scope alignment) |
+| 2 | LOW | Scope Decision | Review `/ultraplan` — official docs now classify as Workflow, not a built-in command; currently listed in report as built-in (row #54, Model tag). If report scope is strictly built-in commands only, consider removing. | ✋ ON HOLD (command still exists and works; pending user decision on scope alignment) |
+
+---
+
+## [2026-07-14 11:10 AM PKT] Claude Code v2.1.208
+
+No priority action items — report is fully in sync with official documentation (16 frontmatter fields, 86 built-in commands).
+
+---
+
+## [2026-07-15 11:08 AM PKT] Claude Code v2.1.210
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Changed Description | Update `/doctor` — reword to reflect bundled-Skill reclassification (v2.1.205) and add `Alias: /checkup` (v2.1.207) | ✅ COMPLETE (description updated and /checkup alias added at #29 in Debug tag) |
+| 2 | LOW | Scope Decision | `/doctor` now a bundled Skill (v2.1.205) — report's own note excludes bundled skills, but `/doctor` is exempt from `disableBundledSkills`; consider whether to remove the row | ✋ ON HOLD (recurring from 2026-07-13 — factual updates applied above; removal decision pending user) |
+| 3 | LOW | Scope Decision | `/ultraplan` classified as Workflow in official docs; currently listed at #54 in Model tag | ✋ ON HOLD (recurring from 2026-07-13 — pending user decision on scope alignment) |
+
+---
+
+## [2026-07-16 11:07 AM PKT] Claude Code v2.1.211
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | LOW | Scope Decision | `/doctor` now a bundled Skill (v2.1.205), exempt from `disableBundledSkills`; report footer excludes bundled skills — consider whether to remove row #29 from Debug tag | ✋ ON HOLD (recurring from 2026-07-13 — pending user decision on scope alignment) |
+| 2 | LOW | Scope Decision | `/ultraplan` classified as Workflow in official docs; currently listed at #54 in Model tag | ✋ ON HOLD (recurring from 2026-07-13 — pending user decision on scope alignment) |
+
+---
+
+## [2026-07-17 11:08 AM PKT] Claude Code v2.1.212
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Command | Add `/subtask <directive>` to Session tag — in-session subagent behavior split from `/fork` in v2.1.212, which now copies the conversation to a background session (count 86 → 87) | ✅ COMPLETE (added as #86 in Session tag; `/workflows` renumbered to #87; count updated 86 → 87) |
+| 2 | LOW | Scope Decision | `/doctor` now a bundled Skill (v2.1.205), exempt from `disableBundledSkills`; report footer excludes bundled skills — consider whether to remove row #29 from Debug tag | ✋ ON HOLD (recurring from 2026-07-13 — pending user decision on scope alignment) |
+| 3 | LOW | Scope Decision | `/ultraplan` classified as Workflow in official docs; currently listed at #54 in Model tag | ✋ ON HOLD (recurring from 2026-07-13 — pending user decision on scope alignment) |
+
+---
+
+## [2026-07-18 11:09 AM PKT] Claude Code v2.1.214
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Command | Add `/bug [report]` to Debug tag — standalone command split from `/feedback` in v2.1.212; you choose how much session history to include and confirm on a consent screen; Alias: `/share` (count 87 → 88) | ✅ COMPLETE (added as #29 in Debug tag; all Debug-onward rows renumbered 30–88; count updated 87 → 88) |
+| 2 | MED | Changed Description | Update `/feedback [report]` — removed `/bug` and `/share` aliases; description changed to "Send product feedback about Claude Code. Opens the same dialog as `/bug`" | ✅ COMPLETE (updated at #31 in Debug tag) |
+| 3 | LOW | Scope Decision | `/doctor` now a bundled Skill (v2.1.205), exempt from `disableBundledSkills`; report footer excludes bundled skills — consider whether to remove row from Debug tag | ✋ ON HOLD (recurring from 2026-07-13 — pending user decision on scope alignment) |
+| 4 | LOW | Scope Decision | `/ultraplan` classified as Workflow in official docs; currently listed in Model tag | ✋ ON HOLD (recurring from 2026-07-13 — pending user decision on scope alignment) |
+
+---
+
+## [2026-07-19 11:07 AM PKT] Claude Code v2.1.215
+
+No priority action items — report is fully in sync with official documentation (16 frontmatter fields, 88 built-in commands).
+
+---
+
+## [2026-07-20 11:08 AM PKT] Claude Code v2.1.215
+
+No priority action items — report is fully in sync with official documentation (16 frontmatter fields, 88 built-in commands).
+
+---
+
+## [2026-07-21 11:10 AM PKT] Claude Code v2.1.216
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Changed Description | Update `/fork [prompt]` — v2.1.212 split changed behavior from "in-session forked subagent" to "copy conversation into a new background session and keep working here"; argument updated from `<directive>` to `[prompt]` | ✅ COMPLETE (updated signature and description at #80 in Session tag) |
+| 2 | HIGH | Changed Description | Update `/subtask <task>` — v2.1.212 split moved the forked-subagent behavior here; official now reads "Spawn a forked subagent: a background subagent that inherits the full conversation and works on the task while you keep working. Its result returns to this conversation when it finishes."; argument updated from `<directive>` to `<task>` | ✅ COMPLETE (updated signature and description at #87 in Session tag) |
+
+---
+
+## [2026-07-22 11:07 AM PKT] Claude Code v2.1.217
+
+No priority action items — report is fully in sync with official documentation (16 frontmatter fields, 88 built-in commands).
+
+---
+
+## [2026-07-23 11:11 AM PKT] Claude Code v2.1.218
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Command | Remove `/powerup` from Debug tag — absent from official docs in independent verification (two agent fetches + direct page check) | ✅ COMPLETE (removed row 34; rows 35–88 renumbered to 34–86; count updated 88 → 86) |
+| 2 | HIGH | Removed Command | Remove `/remote-env` from Remote tag — absent from official docs in independent verification (two agent fetches + direct page check) | ✅ COMPLETE (removed row 69; downstream rows renumbered; count finalized at 86) |
+
+---
+
+## [2026-07-24 11:07 AM PKT] Claude Code v2.1.218
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `background` to frontmatter table — only applies with `context: fork`; set to `false` to wait for the forked subagent's result instead of running in the background; default `true`; requires v2.1.218+ (count 16 → 17) | ✅ COMPLETE (added after `agent` field; heading updated 16 → 17) |
+
+---
+
+## [2026-07-25 11:11 AM PKT] Claude Code v2.1.220
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Reinstated Command | Re-add `/powerup` to Config tag — confirmed present in official docs; was incorrectly removed in v2.1.218 run based on failed agent fetch (count 86 → 88) | ✅ COMPLETE (added as #12 in Config tag; downstream rows 12–86 renumbered 13–87) |
+| 2 | HIGH | Reinstated Command | Re-add `/remote-env` to Remote tag — confirmed present in official docs; was incorrectly removed in v2.1.218 run based on failed agent fetch (count as above) | ✅ COMPLETE (added as #69 in Remote tag; downstream rows 69–87 renumbered 70–88; count finalized at 88) |
+| 3 | MED | Changed Description | Update `/advisor` — remove `fable` from accepted model names; docs confirm `/advisor fable` is rejected since v2.1.210 | ✅ COMPLETE (updated description at #49 in Model tag; now lists `opus`, `sonnet` only) |
+| 4 | LOW | Changed URL | Update Sources section — `https://code.claude.com/docs/en/slash-commands` now redirects to the Skills page; built-in commands moved to `https://code.claude.com/docs/en/commands` | ✅ COMPLETE (updated link text from "Slash Commands" to "Commands" and URL in Sources section) |
+| 5 | LOW | Scope Decision | `/doctor` now a bundled Skill (v2.1.205), exempt from `disableBundledSkills`; report footer excludes bundled skills — consider whether to remove row from Debug tag | ✋ ON HOLD (recurring from 2026-07-13 — pending user decision on scope alignment) |
+| 6 | LOW | Scope Decision | `/ultraplan` classified as Workflow in official docs; currently listed at #55 in Model tag | ✋ ON HOLD (recurring from 2026-07-13 — pending user decision on scope alignment) |
+
+---
+
+## [2026-07-26 11:09 AM PKT] Claude Code v2.1.220
+
+No priority action items — report is fully in sync with official documentation (17 frontmatter fields, 88 built-in commands).
+
+---
+
+## [2026-07-27 11:12 AM PKT] Claude Code v2.1.220
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Command | Remove `/doctor` from Debug tag — reclassified as bundled `[Skill]` since v2.1.205; report's own scope disclaimer excludes bundled skills; count updated 88 → 87 | ✅ COMPLETE (removed row 31; rows 32–88 renumbered 31–87; count heading updated to 87) |
+| 2 | MED | Changed Argument | Update `/ultrareview` — argument hint changed from `[PR]` to `[PR or branch]` per official docs; branch name changes the comparison base | ✅ COMPLETE (updated at row 61 in Project tag) |
+
+---
+
+## [2026-07-28 11:11 AM PKT] Claude Code v2.1.220
+
+No priority action items — report is fully in sync with official documentation (17 frontmatter fields, 87 built-in commands).
+
+---
+
+## [2026-07-29 11:13 AM PKT] Claude Code v2.1.220
+
+No priority action items — report is fully in sync with official documentation (17 frontmatter fields, 87 built-in commands).
+
+---
+
+## [2026-07-30 11:15 AM PKT] Claude Code v2.1.220
+
+No priority action items — report is fully in sync with official documentation (17 frontmatter fields, 87 built-in commands).
+
+---
+
+## [2026-07-31 11:11 AM PKT] Claude Code v2.1.220
+
+No priority action items — report is fully in sync with official documentation (17 frontmatter fields, 87 built-in commands).
+
+---
+
+## [2026-08-01 11:13 AM PKT] Claude Code v2.1.220
+
+No priority action items — report is fully in sync with official documentation (17 frontmatter fields, 87 built-in commands).
+
+---
+
+## [2026-08-02 11:11 AM PKT] Claude Code v2.1.220
+
+No priority action items — report is fully in sync with official documentation (17 frontmatter fields, 87 built-in commands).
+
+---
+
+## [2026-08-07 11:22 AM PKT] Claude Code v2.1.224
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Field | Add `metadata` to frontmatter table — free-form YAML map for own key-value data; Claude Code ignores the value (Agent Skills spec passthrough; count 17 → 20) | ✅ COMPLETE (added as 17th field before `hooks`; heading updated 17 → 20) |
+| 2 | HIGH | New Field | Add `license` to frontmatter table — license covering the skill per Agent Skills spec; Claude Code accepts but does not act on it (count 17 → 20) | ✅ COMPLETE (added as 18th field) |
+| 3 | HIGH | New Field | Add `compatibility` to frontmatter table — environment requirements per Agent Skills spec; accepts up to 500 characters; Claude Code accepts but does not act on it (count 17 → 20) | ✅ COMPLETE (added as 19th field) |
+| 4 | HIGH | New Command | Add `/autocompact [auto\|<tokens>]` to Context tag — set the auto-compact window; pass a token count like `500k` or `auto` to reset; saves to settings; requires v2.1.221+ | ✅ COMPLETE (added as #23 in Context tag; downstream rows 23–87 renumbered 24–88; count updated 87 → 88) |
+| 5 | HIGH | Changed Description | Update `/review [PR]` — alias of `/code-review` since v2.1.223; accepts diff, PR number, branch, or path; same effort levels and flags; `/code-review ultra` for deep review | ✅ COMPLETE (updated description at #59 in Project tag) |
+
+---
+
+## [2026-08-08 11:09 AM PKT] Claude Code v2.1.226
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Command | Remove `/ultraplan <prompt>` from Model tag — removed in v2.1.222 per changelog ("Removed ultraplan feature"); official docs row is a tombstone ("Removed. Use plan mode instead."); count updated 88 → 87 then 89 after additions | ✅ COMPLETE (removed row 55; Model tag renumbered; count finalized at 89) |
+| 2 | HIGH | New Command | Add `/import [codex\|gemini] [--dry-run] [--yes]` to Config tag — bring configuration from other coding agents (Codex, Gemini CLI) into Claude Code; inserted alphabetically between `/focus` and `/keybindings`; requires v2.1.213+ (count 88 → 89) | ✅ COMPLETE (added as #10 in Config tag; downstream rows 10–88 renumbered 11–89; count updated to 89) |
+| 3 | HIGH | New Command | Add `/list-agents` to Session tag — list subagents and other Claude Code sessions Claude can message; alias `/peers`; only available where cross-session messaging is enabled; requires v2.1.224+ (count +1 = 89) | ✅ COMPLETE (added as #82 in Session tag after `/goal`; downstream rows 82–88 renumbered 83–89) |
+| 4 | LOW | Changed Description | Update `/security-review` — official docs tightened to "Reviews the diff between your branch and origin's default branch" and adds "Needs an `origin` remote" | ✅ COMPLETE (updated description at #60 in Project tag) |
+
+---
+
+## [2026-08-09 11:17 AM PKT] Claude Code v2.1.226
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | LOW | Changed Argument | Update `/btw` — argument changed from `<question>` (required) to `[question]` (optional) since v2.1.212; without an argument, reopens overlay on most recent side question | ✅ COMPLETE (argument syntax and description updated at #75 in Session tag) |
+| 2 | LOW | Changed Description | Update `/status` — add Session kind row detail (background job · attached / unattended / interactive, added v2.1.221) to description | ✅ COMPLETE (added Session kind info at #29 in Context tag) |
+| 3 | LOW | Changed Description | Update `/skills` — add type-to-filter note; correct Space behavior from "hides a skill" to "cycles visibility (four states via skill overrides)" | ✅ COMPLETE (description updated to match official docs at #48 in Extensions tag) |

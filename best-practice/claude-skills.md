@@ -1,6 +1,6 @@
 # Skills Best Practice
 
-![Last Updated](https://img.shields.io/badge/Last_Updated-Jul%2011%2C%202026%2010%3A02%20AM%20PKT-white?style=flat&labelColor=555) ![Version](https://img.shields.io/badge/Claude_Code-v2.1.207-blue?style=flat&labelColor=555)<br>
+![Last Updated](https://img.shields.io/badge/Last_Updated-Aug%2009%2C%202026%2010%3A09%20AM%20PKT-white?style=flat&labelColor=555) ![Version](https://img.shields.io/badge/Claude_Code-v2.1.226-blue?style=flat&labelColor=555)<br>
 [![Implemented](https://img.shields.io/badge/Implemented-2ea44f?style=flat)](../implementation/claude-skills-implementation.md)
 
 Claude Code skills — frontmatter fields and official bundled skills.
@@ -14,7 +14,7 @@ Claude Code skills — frontmatter fields and official bundled skills.
 
 ---
 
-## Frontmatter Fields (16)
+## Frontmatter Fields (20)
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
@@ -31,13 +31,17 @@ Claude Code skills — frontmatter fields and official bundled skills.
 | `effort` | string | No | Override the model effort level when invoked (`low`, `medium`, `high`, `xhigh`, `max`) |
 | `context` | string | No | Set to `fork` to run the skill in an isolated subagent context |
 | `agent` | string | No | Subagent type when `context: fork` is set (default: `general-purpose`) |
+| `background` | boolean | No | Only applies with `context: fork`. Set to `false` to wait for the forked subagent's result in the invoking turn instead of running in the background (default: `true`). Requires v2.1.218+ |
 | `hooks` | object | No | Lifecycle hooks scoped to this skill |
 | `paths` | string/list | No | Glob patterns that limit when the skill auto-activates. Accepts a comma-separated string or YAML list — Claude loads the skill only when working with matching files |
 | `shell` | string | No | Shell for `` !`command` `` blocks — `bash` (default) or `powershell`. Requires `CLAUDE_CODE_USE_POWERSHELL_TOOL=1` |
+| `metadata` | YAML map | No | Free-form YAML map for your own key-value data (e.g., entitlement or catalog fields) read by your own tooling from `SKILL.md`. Claude Code does not act on its contents; drops values that aren't a map. Do not reuse frontmatter field names (e.g., `paths`) as keys |
+| `license` | string | No | License covering the skill. Part of the [Agent Skills](https://agentskills.io) spec. Claude Code accepts the field but does not act on it |
+| `compatibility` | string | No | Environment requirements for the skill (max 500 chars), such as intended products or system prerequisites. Part of the [Agent Skills](https://agentskills.io) spec. Claude Code accepts the field but does not act on it |
 
 ---
 
-## ![Official](../!/tags/official.svg) **(13)**
+## ![Official](../!/tags/official.svg) **(15)**
 
 | # | Skill | Description |
 |---|-------|-------------|
@@ -54,6 +58,8 @@ Claude Code skills — frontmatter fields and official bundled skills.
 | 11 | `design-sync` | Convert your repo's React design system and upload it to Claude Design — optionally name the design system (e.g., `/design-sync Acme DS`). First-time sync verifies every component and can take hours on large repos. Available on the Anthropic API only (unavailable on Bedrock, Google Cloud Agent Platform, and Microsoft Foundry) |
 | 12 | `dataviz` | Design charts, graphs, and dashboards with a color-palette validator for accessible, consistent visualizations — triggers on requests for any chart, graph, plot, or data visualization in any output medium. Introduced v2.1.198 |
 | 13 | `doctor` | Setup/health checkup for your Claude Code configuration. The one bundled skill exempt from `disableBundledSkills` — stays typable even when that setting is on. Reclassified from a built-in command to a bundled skill in v2.1.205 |
+| 14 | `review` | Fast single-pass, read-only review of a GitHub pull request. For a multi-agent deep dive, use `/code-review <level> <pr#>` instead. From v2.1.186–v2.1.201 used the `/code-review medium` engine; v2.1.202 reverted to a fast single-pass review. Became Skill-tool-invocable in v2.1.108 |
+| 15 | `security-review` | Review the current diff for security vulnerabilities and suggest fixes. Pass `--fix` to apply findings or `--comment` to post them as inline GitHub PR comments. Became Skill-tool-invocable in v2.1.108 |
 
 See also: [Official Skills Repository](https://github.com/anthropics/skills/tree/main/skills) for community-maintained installable skills.
 

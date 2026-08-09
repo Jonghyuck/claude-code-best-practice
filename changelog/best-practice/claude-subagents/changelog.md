@@ -567,3 +567,261 @@ No drift detected on the two tracked dimensions — all 16 frontmatter fields an
 **Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
 
 **Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-4-8` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-12 03:30 PM PKT] Claude Code v2.1.207
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-4-8` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-13 11:37 AM PKT] Claude Code v2.1.207
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-4-8` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-14 11:37 AM PKT] Claude Code v2.1.208
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-4-8` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-15 11:37 AM PKT] Claude Code v2.1.210
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-4-8` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-16 11:37 AM PKT] Claude Code v2.1.211
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-4-8` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-17 11:37 AM PKT] Claude Code v2.1.212
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-4-8` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-18 11:37 AM PKT] Claude Code v2.1.214
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-4-8` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-19 11:37 AM PKT] Claude Code v2.1.215
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-4-8` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-20 11:37 AM PKT] Claude Code v2.1.215
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-4-8` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-21 11:37 AM PKT] Claude Code v2.1.216
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-4-8` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-22 11:38 AM PKT] Claude Code v2.1.217
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-4-8` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-23 11:37 AM PKT] Claude Code v2.1.218
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-4-8` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-24 11:36 AM PKT] Claude Code v2.1.218
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-4-8` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-25 11:39 AM PKT] Claude Code v2.1.220
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-5` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-26 11:39 AM PKT] Claude Code v2.1.220
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-5` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+---
+
+## [2026-07-27 11:39 AM PKT] Claude Code v2.1.220
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-5` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+**Watch item (new):** Official docs describe `Explore`'s model as inheriting from the main conversation (capped at Opus on the Claude API); the report's built-in agents table lists it as `haiku`. This is a value change within an existing row, not an add/remove — out of scope for tracked dimensions, but worth updating.
+
+---
+
+## [2026-07-28 11:38 AM PKT] Claude Code v2.1.220
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-5` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+**Watch item (recurring):** `Explore`'s model is described in official docs as inheriting from the main conversation (capped at Opus on the Claude API); the report's built-in agents table lists it as `haiku`. Value change within an existing row — out of scope for tracked dimensions, but worth updating.
+
+---
+
+## [2026-07-29 11:37 AM PKT] Claude Code v2.1.220
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-5` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+**Watch item (recurring):** `Explore`'s model is described in official docs as inheriting from the main conversation (capped at Opus on the Claude API); the report's built-in agents table lists it as `haiku`. Value change within an existing row — out of scope for tracked dimensions, but worth updating.
+
+---
+
+## [2026-07-30 11:41 AM PKT] Claude Code v2.1.220
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-5` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+**Watch item (recurring):** `Explore`'s model is described in official docs as inheriting from the main conversation (capped at Opus on the Claude API); the report's built-in agents table lists it as `haiku`. Value change within an existing row — out of scope for tracked dimensions, but worth updating.
+
+---
+
+## [2026-07-31 11:37 AM PKT] Claude Code v2.1.220
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-5` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+**Watch item (recurring):** `Explore`'s model is described in official docs as inheriting from the main conversation (capped at Opus on the Claude API); the report's built-in agents table lists it as `haiku`. Value change within an existing row — out of scope for tracked dimensions, but worth updating.
+
+---
+
+## [2026-08-01 11:37 AM PKT] Claude Code v2.1.220
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-5` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+**Watch item (recurring):** `Explore`'s model is described in official docs as inheriting from the main conversation (capped at Opus on the Claude API); the report's built-in agents table lists it as `haiku`. Value change within an existing row — out of scope for tracked dimensions, but worth updating.
+
+---
+
+## [2026-08-02 11:37 AM PKT] Claude Code v2.1.220
+
+No drift detected on the two tracked dimensions — all 16 frontmatter fields and 5 built-in agents match.
+
+**Watch item (recurring):** `prompt` remains in the `--agents` CLI JSON field enumeration in the official docs but is absent from the "Supported frontmatter fields" table. Still not a drift finding for file-based frontmatter tracking.
+
+**Watch item (recurring):** Official docs reference `fable` as a model alias and `claude-opus-5` as the example full model ID; the report's `model` field description still shows `claude-opus-4-6` and omits `fable`. Out of scope for tracked dimensions.
+
+**Watch item (recurring):** `Explore`'s model is described in official docs as inheriting from the main conversation (capped at Opus on the Claude API); the report's built-in agents table lists it as `haiku`. Value change within an existing row — out of scope for tracked dimensions, but worth updating.
+
+---
+
+## [2026-08-07 11:38 AM PKT] Claude Code v2.1.224
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all agent used when no specialized agent fits; also the default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval to add claude agent row to official agents table) |
+
+---
+
+## [2026-08-08 11:37 AM PKT] Claude Code v2.1.226
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all agent used when no specialized agent fits; also the default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-08-09 11:39 AM PKT] Claude Code v2.1.226
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all agent used when no specialized agent fits; also the default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
