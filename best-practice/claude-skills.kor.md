@@ -6,7 +6,7 @@
 
 # Skills Best Practice
 
-![Last Updated](https://img.shields.io/badge/Last_Updated-Jul%2011%2C%202026%2010%3A02%20AM%20PKT-white?style=flat&labelColor=555) ![Version](https://img.shields.io/badge/Claude_Code-v2.1.207-blue?style=flat&labelColor=555)<br>
+![Last Updated](https://img.shields.io/badge/Last_Updated-Aug%2009%2C%202026%2010%3A09%20AM%20PKT-white?style=flat&labelColor=555) ![Version](https://img.shields.io/badge/Claude_Code-v2.1.226-blue?style=flat&labelColor=555)<br>
 [![Implemented](https://img.shields.io/badge/Implemented-2ea44f?style=flat)](../implementation/claude-skills-implementation.md)
 
 Claude Code 스킬 — 프론트매터 필드와 공식 번들 스킬.
@@ -20,7 +20,7 @@ Claude Code 스킬 — 프론트매터 필드와 공식 번들 스킬.
 
 ---
 
-## Frontmatter Fields (16)
+## Frontmatter Fields (20)
 
 | Field | Type | Required | Description |
 |-------|------|----------|-------------|
@@ -37,13 +37,17 @@ Claude Code 스킬 — 프론트매터 필드와 공식 번들 스킬.
 | `effort` | string | No | 호출 시 모델 노력 수준을 재정의(`low`, `medium`, `high`, `xhigh`, `max`) |
 | `context` | string | No | `fork`로 설정하면 스킬을 격리된 서브에이전트 컨텍스트에서 실행 |
 | `agent` | string | No | `context: fork`가 설정된 경우의 서브에이전트 유형(기본값: `general-purpose`) |
+| `background` | boolean | No | `context: fork`일 때만 적용. `false`로 설정하면 백그라운드로 실행하는 대신, 호출한 턴에서 포크된 서브에이전트의 결과를 기다림(기본값: `true`). v2.1.218+ 필요 |
 | `hooks` | object | No | 이 스킬로 범위가 한정된 라이프사이클 훅 |
 | `paths` | string/list | No | 스킬이 자동 활성화되는 시점을 제한하는 glob 패턴. 쉼표로 구분된 문자열 또는 YAML 리스트를 허용 — Claude는 매칭되는 파일을 다룰 때만 스킬을 로드함 |
 | `shell` | string | No | `` !`command` `` 블록에 쓰이는 셸 — `bash`(기본값) 또는 `powershell`. `CLAUDE_CODE_USE_POWERSHELL_TOOL=1`이 필요함 |
+| `metadata` | YAML map | No | `SKILL.md`에서 당신 자신의 도구가 읽는 자유 형식 YAML 맵으로, 임의의 키-값 데이터(예: 엔타이틀먼트나 카탈로그 필드)를 담음. Claude Code는 그 내용에 대해 아무 동작도 하지 않으며, 맵이 아닌 값은 버림. frontmatter 필드 이름(예: `paths`)을 키로 재사용하지 말 것 |
+| `license` | string | No | 스킬에 적용되는 라이선스. [Agent Skills](https://agentskills.io) 스펙의 일부. Claude Code는 이 필드를 받아들이지만 그에 따라 동작하지는 않음 |
+| `compatibility` | string | No | 스킬의 환경 요구사항(최대 500자) — 의도한 제품이나 시스템 사전 요건 등. [Agent Skills](https://agentskills.io) 스펙의 일부. Claude Code는 이 필드를 받아들이지만 그에 따라 동작하지는 않음 |
 
 ---
 
-## ![Official](../!/tags/official.svg) **(13)**
+## ![Official](../!/tags/official.svg) **(15)**
 
 | # | Skill | Description |
 |---|-------|-------------|
@@ -60,6 +64,8 @@ Claude Code 스킬 — 프론트매터 필드와 공식 번들 스킬.
 | 11 | `design-sync` | 리포지토리의 React 디자인 시스템을 변환해 Claude Design에 업로드 — 디자인 시스템 이름을 선택적으로 지정 가능(예: `/design-sync Acme DS`). 최초 동기화는 모든 컴포넌트를 검증하며 대규모 리포에서는 수 시간이 걸릴 수 있음. Anthropic API에서만 사용 가능(Bedrock, Google Cloud Agent Platform, Microsoft Foundry에서는 불가) |
 | 12 | `dataviz` | 접근성 있고 일관된 시각화를 위한 색상 팔레트 검증기와 함께 차트, 그래프, 대시보드를 디자인 — 어떤 출력 매체든 차트, 그래프, 플롯, 데이터 시각화 요청에서 트리거됨. v2.1.198에 도입 |
 | 13 | `doctor` | Claude Code 구성에 대한 설정/상태 점검. `disableBundledSkills`에서 면제되는 유일한 번들 스킬 — 해당 설정이 켜져 있어도 계속 입력 가능. v2.1.205에서 내장 명령에서 번들 스킬로 재분류됨 |
+| 14 | `review` | GitHub 풀 리퀘스트의 빠른 단일 패스 읽기 전용 리뷰. 멀티에이전트 심층 검토는 대신 `/code-review <level> <pr#>`를 사용. v2.1.186–v2.1.201에서는 `/code-review medium` 엔진을 사용했고, v2.1.202에서 빠른 단일 패스 리뷰로 되돌림. v2.1.108에서 Skill 도구로 호출 가능해짐 |
+| 15 | `security-review` | 현재 diff의 보안 취약점을 검토하고 수정을 제안. `--fix`로 발견 내용을 적용하거나 `--comment`로 인라인 GitHub PR 코멘트로 게시. v2.1.108에서 Skill 도구로 호출 가능해짐 |
 
 See also: [Official Skills Repository](https://github.com/anthropics/skills/tree/main/skills) for community-maintained installable skills.
 
